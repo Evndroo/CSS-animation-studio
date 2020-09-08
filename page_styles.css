@@ -1,0 +1,178 @@
+*, *::before, *::after{
+    margin:0;
+    outline: 0;
+}
+
+/*Organizando e limitando blocos*/
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/*Estilizando header*/
+
+header{
+    background:#3A345C;
+    position: fixed;
+    width: 100%;
+}
+
+header > .flex{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.logo{
+    font-size: 60px;
+    color: white;
+}
+
+.logo > span{
+    color: #CF00F1;
+}
+
+.circle{
+    width: 3em;
+    height: 3em;
+    background: RGB(75,70,106);
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+}
+
+#toggle-menu{
+    background: transparent;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hamburguer{
+    width: 50%;
+    position: relative;
+}
+
+.hamburguer,
+.hamburguer::before,
+.hamburguer::after{
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburguer::before,
+.hamburguer::after{
+    width: 100%;
+    content: '';
+}
+
+.hamburguer::before{
+    transform: translateY(-6px);
+}
+
+.hamburguer::after{
+    transform: translateY(3px);
+}
+
+.nav{
+    max-height: 0;
+    transition: max-height 1s ease-in-out;
+}
+
+.nav .nav--list-item{
+    list-style: none;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.showing-nav{
+    transition: max-height 1s ease-in-out;
+    max-height: 260px;
+}
+
+.nav .nav--list,
+.nav .nav--list-item{
+    visibility: hidden;
+    margin: 0px;
+    opacity: 0;
+    transition: visibility 0s linear, margin 1s linear;
+}
+
+.showing-nav .nav--list,
+.showing-nav .nav--list-item{
+    transition: visibility 0s, opacity 1.2s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+
+.showing-nav .nav--list-item{
+    list-style: none;
+    text-align: center;
+    margin-top:2em;
+}
+
+.showing-nav .nav--list{
+    padding: 0;
+    padding-bottom:2em;
+}
+
+.nav--list-item > a{
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+
+.nav--list-item a.active{
+    border-bottom: #CF00F1 2px solid;
+}
+
+/*Estilizando CTA*/
+
+.cta{
+    height: 100vh;
+    background: #4b466a;
+    padding-top: 14vh;
+    color: white;
+}
+
+.cta-title{
+    font-size: 30px;
+    padding: 1.5rem 0;
+}
+
+.cta-title span{
+    color: #CF00F1;
+}
+
+.cta-details{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.cta-details p{
+    text-align: left;
+}
+
+.cta-details button{
+    margin-top:2rem;
+    padding: .5rem 3rem;
+    color: white;
+    background-color: #CF00F1;
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+    font-size: 1em;
+
+}

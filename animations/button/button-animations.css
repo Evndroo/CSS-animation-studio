@@ -1,0 +1,128 @@
+
+@keyframes slide-in{
+    10%{
+        border: 2px solid #CF00F1;
+        background: linear-gradient(90deg, white 10%, #Cf00f1 10%);
+    }
+
+    20%{
+        border: 2px solid #CF00F1;
+        background: linear-gradient(90deg, white 20%, #Cf00f1 20%);
+    }
+    
+    30%{
+        border: 2px solid #CF00F1;
+        background: linear-gradient(90deg, white 30%, #Cf00f1 30%);
+    }
+    
+    40%{
+        border: 2px solid #CF00F1;
+        background: linear-gradient(90deg, white 40%, #Cf00f1 40%);
+    }
+    
+    50%{
+        border: 2px solid #CF00F1;
+        background: linear-gradient(90deg, white 50%, #Cf00f1 50%);
+    }
+    
+    60%{
+        border: 2px solid #CF00F1;
+        background: linear-gradient(90deg, white 60%, #Cf00f1 60%);
+    }
+
+    70%{
+        border: 2px solid #CF00F1;
+        background: linear-gradient(90deg, white 70%, #Cf00f1 70%);
+    }
+
+    80%{
+        border: 2px solid #CF00F1;
+        background: linear-gradient(90deg, white 80%, #Cf00f1 80%);
+    }
+
+    90%{
+        border: 2px solid #CF00F1;
+        background: linear-gradient(90deg, white 90%, #Cf00f1 90%);
+    }
+
+    100%{
+        border: 2px solid #CF00F1;
+        background: white;
+        color:#CF00F1;
+    }
+}
+
+@keyframes slide-out{
+    10%{
+        border: 2px solid #CF00F1;
+        background: linear-gradient(90deg, white 90%, #Cf00f1 90%);
+    }
+
+    20%{
+        border: 2px solid #CF00F1;
+        background: linear-gradient(90deg, white 80%, #Cf00f1 80%);
+    }
+    
+    30%{
+        border: 2px solid #CF00F1;
+        background: linear-gradient(90deg, white 70%, #Cf00f1 70%);
+    }
+    
+    40%{
+        border: 2px solid #CF00F1;
+        background: linear-gradient(90deg, white 60%, #Cf00f1 60%);
+    }
+    
+    50%{
+        border: 2px solid #CF00F1;
+        background: linear-gradient(90deg, white 50%, #Cf00f1 50%);
+    }
+    
+    60%{
+        border: 2px solid #CF00F1;
+        background: linear-gradient(90deg, white 40%, #Cf00f1 40%);
+    }
+
+    70%{
+        border: 2px solid #CF00F1;
+        background: linear-gradient(90deg, white 30%, #Cf00f1 30%);
+    }
+
+    80%{
+        border: 2px solid #CF00F1;
+        background: linear-gradient(90deg, white 20%, #Cf00f1 20%);
+    }
+
+    90%{
+        border: 2px solid #CF00F1;
+        background: linear-gradient(90deg, white 10%, #Cf00f1 10%);
+    }
+
+    100%{
+        border: 2px solid #CF00F1;
+        background: #CF00F1;
+        color:white;
+    }
+}
+
+.btn{
+    padding: 1rem 8rem;
+    border-radius: 15px;
+    outline: 0;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.color-slide-change{
+    background:#CF00F1;
+    border: 2px solid #CF00F1;
+    color:white;
+    animation-fill-mode: forwards; 
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    animation-name: slide-out;
+}
+
+.color-slide-change:hover{
+    animation-name:slide-in;
+}

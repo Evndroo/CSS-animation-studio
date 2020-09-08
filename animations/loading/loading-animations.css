@@ -1,0 +1,137 @@
+
+
+@keyframes rotation{
+    2%{
+        transform: rotate(0deg);
+    }
+    18%{
+        transform: rotate(60deg);
+    }
+    34%{
+        transform: rotate(120deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    66%{
+        transform: rotate(240deg);
+    }
+    84%{
+        transform: rotate(300deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes jump-point{
+    20%{
+        transform: translateY(0px);
+        width: 30px;
+        height: 30px;
+    }    
+    50%{
+        transform: translateY(-20px);
+        width: 45px;
+        height: 45px;
+    }
+    80%{
+        transform: translateY(0px);
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@keyframes radialCompleting{
+    10%{
+        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 10%, #FFFFFF 0%);
+    }
+    20%{
+        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 20%, #FFFFFF 0%);
+    }
+    30%{
+        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 30%, #FFFFFF 0%);
+    }
+    40%{
+        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 40%, #FFFFFF 0%);
+    }
+    50%{
+        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 50%, #FFFFFF 0%);
+    }
+    60%{
+        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 60%, #FFFFFF 0%);
+    }
+    70%{
+        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 70%, #FFFFFF 0%);
+    }
+    80%{
+        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 80%, #FFFFFF 0%);
+    }
+    90%{
+        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 90%, #FFFFFF 0%);
+    }
+    100%{
+        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 100%, #FFFFFF 0%);
+    }
+}
+
+.circular-loading img{
+    animation-name:rotation;
+    animation-delay: 0ms;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.jumping-points {
+    display: flex;
+    height: 105px;
+    align-items: flex-end;
+}
+
+.jumping-points > .loading-point-1,
+.jumping-points > .loading-point-2,
+.jumping-points > .loading-point-3{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: #CF00F1;
+    content: "";
+    animation: jump-point 2s linear;
+    animation-iteration-count: infinite;
+}
+
+.jumping-points > .loading-point-2,
+.jumping-points > .loading-point-3{
+    margin-left: 2rem;
+}
+
+.jumping-points > .loading-point-2{
+    animation-delay:0.5s ;
+}
+
+.jumping-points > .loading-point-3{
+    animation-delay:1s ;
+}
+
+
+.circular-completing > div{
+    width: 105px;
+    height: 105px;
+    margin: 0 auto;
+    border-radius: 100%;
+    background: red;
+    display: flex;
+    background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 0%, #FFFFFF 0%);
+    animation: radialCompleting 1s linear;
+    animation-iteration-count: infinite;
+}
+
+.circular-completing > div > div{
+    border-radius: 100%;
+    background: white;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
