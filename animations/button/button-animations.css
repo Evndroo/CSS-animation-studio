@@ -106,10 +106,11 @@
 }
 
 .btn{
-    padding: 1rem 8rem;
+    padding: 0.5rem 3rem;
     border-radius: 15px;
     outline: 0;
-    font-size: 1.5em;
+    font-size: 1em;
+    margin-top: 1rem;
     font-weight: bolder;
 }
 
@@ -125,4 +126,33 @@
 
 .color-slide-change:hover{
     animation-name:slide-in;
+}
+
+
+section#button{
+    height: 100vh;
+    padding: 50px 0;
+    background-color: #f1f1f1;
+}
+
+#button .container h3{
+    color: #CF00F1;
+}
+
+
+@media (min-width:600px){
+    section#button{
+        padding: 0;
+    }
+
+    .animations .container {
+        width: 80%;
+    }
+
+}
+
+@media (min-width:800px){
+    .btn{
+        padding: 1rem 4rem;
+    }
 }

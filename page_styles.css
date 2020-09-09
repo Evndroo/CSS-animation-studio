@@ -11,10 +11,6 @@
 }
 
 
-
-
-
-
 /*Estilizando header*/
 
 header{
@@ -183,9 +179,75 @@ header > .flex > div{
 
 }
 
+.cta-details span{
+    color: #CF00F1;
+    font-weight: bolder;
+}
+
+
+/*Estilizando a seção de animações*/
+
+
+.animations .container{
+    width: 90%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container > p{
+    width: 60%;
+    margin-top: 5px;
+}
+
+.container .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    margin-top:2rem
+}
+
+.card p {
+    margin: 1rem 0;
+    width: 8rem;
+    color:#444;
+}
+
+.card p:last-child{
+    color: black;
+}
+
+.card a{
+    color: black;
+    border-bottom: black 1px solid;
+    text-decoration: none;
+    margin-top: 1rem
+}
+
+
+/*responsividade para tablets e desktop de pequeno e médio porte*/
 @media (min-width:600px){
     
+    .container > h3{
+        font-size:35px
+    }
     
+    .container > p{
+        font-size: 20px;
+    }
+
+    .card{
+        margin-top: 4rem;
+    }
+
+    .card > h4{
+        font-size: 20px;
+    }
+
     .cta .flex{
         display: flex;
         align-items: center;
@@ -236,7 +298,14 @@ header > .flex > div{
         display: none;
     }
 
-    
+    .card p {
+        width: 12rem;
+    }    
+
+    .card p:last-child{
+        width: 100%;
+        text-align: center;
+    }
 
     header > .flex > div{
         width: 10%;
@@ -264,6 +333,6 @@ header > .flex > div{
     }
 
     .cta-details{
-        font-size: 2em;
+        font-size: 2.4em;
     }
 }
