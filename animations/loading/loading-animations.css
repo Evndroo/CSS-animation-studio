@@ -44,38 +44,50 @@
 
 @keyframes radialCompleting{
     10%{
-        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 10%, #FFFFFF 0%);
+        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 10%, transparent 0%);
     }
     20%{
-        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 20%, #FFFFFF 0%);
+        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 20%, transparent 0%);
     }
     30%{
-        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 30%, #FFFFFF 0%);
+        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 30%, transparent 0%);
     }
     40%{
-        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 40%, #FFFFFF 0%);
+        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 40%, transparent 0%);
     }
     50%{
-        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 50%, #FFFFFF 0%);
+        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 50%, transparent 0%);
     }
     60%{
-        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 60%, #FFFFFF 0%);
+        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 60%, transparent 0%);
     }
     70%{
-        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 70%, #FFFFFF 0%);
+        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 70%, transparent 0%);
     }
     80%{
-        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 80%, #FFFFFF 0%);
+        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 80%, transparent 0%);
     }
     90%{
-        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 90%, #FFFFFF 0%);
+        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 90%, transparent 0%);
     }
     100%{
-        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 100%, #FFFFFF 0%);
+        background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 100%, transparent 0%);
     }
 }
 
+section#loading{
+    height: 100vh;
+    padding: 100px 0;
+    background-color: #534e70;
+    color: white;
+}
+
+.circular-loading{
+    height: 105px;
+}
+
 .circular-loading img{
+    max-height: 100%;
     animation-name:rotation;
     animation-delay: 0ms;
     animation-duration: 2s;
@@ -88,6 +100,10 @@
     display: flex;
     height: 105px;
     align-items: flex-end;
+}
+
+.jumping-points + p{
+    width: 11rem;
 }
 
 .jumping-points > .loading-point-1,
@@ -121,17 +137,37 @@
     height: 105px;
     margin: 0 auto;
     border-radius: 100%;
-    background: red;
+    background: transparent;
     display: flex;
-    background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 0%, #FFFFFF 0%);
+    background-image: radial-gradient(farthest-corner at 0% 0% , #CF00F1 0%, transparent 0%);
     animation: radialCompleting 1s linear;
     animation-iteration-count: infinite;
 }
 
 .circular-completing > div > div{
     border-radius: 100%;
-    background: white;
+    background: #534e70;
     width: 90%;
     height: 90%;
     margin: auto;
+}
+
+#loading .container > h3{
+    color: #CF00F1;
+}
+
+
+#loading .card p{
+    color: #ccc;
+}
+
+#loading .card a {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+@media (min-width: 600px){
+    section#loading{
+        padding: 25px 0;
+    }
 }

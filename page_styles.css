@@ -16,6 +16,7 @@
 header{
     background:#3A345C;
     position: fixed;
+    z-index: 1;
     width: 100%;
 }
 
@@ -196,6 +197,11 @@ header > .flex > div{
     flex-direction: column;
 }
 
+
+.container > h3{
+    color: #C900EB;
+}
+
 .container > p{
     width: 60%;
     margin-top: 5px;
@@ -230,7 +236,7 @@ header > .flex > div{
 
 
 /*responsividade para tablets e desktop de pequeno e médio porte*/
-@media (min-width:600px){
+@media (min-width:600px){    
     
     .container > h3{
         font-size:35px
@@ -265,12 +271,20 @@ header > .flex > div{
     .cta-details button{
         padding: 1rem 2rem;
     }
+
+    .animations .container {
+        width: 80%;
+    }
 }
 
 @media (min-width:800px){
 
     .container{
         width:85%;
+    }
+
+    .btn{
+        padding: 1rem 4rem;
     }
 
     .nav{

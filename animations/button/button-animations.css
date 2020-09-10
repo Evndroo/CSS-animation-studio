@@ -135,24 +135,4 @@ section#button{
     background-color: #f1f1f1;
 }
 
-#button .container h3{
-    color: #CF00F1;
-}
 
-
-@media (min-width:600px){
-    section#button{
-        padding: 0;
-    }
-
-    .animations .container {
-        width: 80%;
-    }
-
-}
-
-@media (min-width:800px){
-    .btn{
-        padding: 1rem 4rem;
-    }
-}
